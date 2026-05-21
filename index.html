@@ -10,11 +10,11 @@
 <body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
 
     <!-- Main Content Container -->
-    <main class="max-w-3xl mx-auto px-6 py-16 flex-grow flex flex-col justify-center">
+    <main class="max-w-3xl mx-auto px-6 py-16 flex-grow flex flex-col justify-center w-full">
         
         <!-- Header Section -->
         <header class="mb-8">
-            <h1 class="text-4xl font-bold bg-gradient-to-r blue-400 from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Nonthee Panatuek
             </h1>
             <p class="text-slate-400 text-lg mt-2 font-medium">
@@ -30,32 +30,70 @@
             </p>
         </section>
 
-        <!-- Assignments & Works Section -->
-        <section class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 backdrop-blur-sm shadow-xl">
-            <h2 class="text-xl font-semibold text-cyan-400 mb-4 flex items-center gap-2">
-                📂 คลังข้อมูลและการส่งงาน
+<!-- Featured Projects Section -->
+        <section class="mb-8 bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 backdrop-blur-sm shadow-xl">
+            <h2 class="text-xl font-semibold text-emerald-400 mb-4 flex items-center gap-2">
+                🚀 Featured Projects / ผลงานที่พัฒนา
             </h2>
             
             <div class="space-y-4">
-                <!-- วิชา CSI205 ที่คุณใส่ไว้เดิม จัดหน้าตาใหม่ให้กดง่ายขึ้น -->
+                <!-- Expense Tracker Card -->
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-slate-800 rounded-xl hover:border-slate-600 border border-transparent transition-all">
-                    <div>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1">Coursework</span>
+                    <div class="mb-3 sm:mb-0">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-500 block mb-1">Web Application</span>
+                        <h3 class="text-md font-medium text-slate-200">Expense Tracker</h3>
+                        <p class="text-sm text-slate-400 mt-1">ระบบบันทึกและติดตามรายรับ-รายจ่ายส่วนบุคคล สรุปยอดรายวันและแยกหมวดหมู่</p>
+                        <div class="flex gap-2 mt-2">
+                            <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">React</span>
+                            <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <a href="https://expenses-tracker-night.netlify.app/" 
+                       target="_blank" 
+                       class="inline-flex items-center justify-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-medium rounded-lg text-sm transition-colors shadow-lg shadow-emerald-500/20 whitespace-nowrap">
+                        เปิดดูเว็บไซต์ ↗
+                    </a>
+                </div>
+
+                <!-- Sliding Puzzle Card (โปรเจกต์เกมใหม่ที่เพิ่มเข้ามา) -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-slate-800 rounded-xl hover:border-slate-600 border border-transparent transition-all">
+                    <div class="mb-3 sm:mb-0">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-500 block mb-1">Web Game / Custom Logic</span>
+                        <h3 class="text-md font-medium text-slate-200">Game</h3>
+                        <p class="text-sm text-slate-400 mt-1">เป็นเว็บที่ผมคิด ลอจิก เองเพื่อสร้างเป็นเกมแต่ละเกมในเวลาว่างและให้ AI ช่วยตกแต่ง</p>
+                        <div class="flex gap-2 mt-2">
+                            <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">JavaScript</span>
+                            <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded">HTML5 / CSS3</span>
+                        </div>
+                    </div>
+                    <a href="https://allgamebynight.netlify.app/" 
+                       target="_blank" 
+                       class="inline-flex items-center justify-center px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-medium rounded-lg text-sm transition-colors shadow-lg shadow-emerald-500/20 whitespace-nowrap">
+                        เปิดดูเว็บไซต์ ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignments & Works Section -->
+        <section class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 backdrop-blur-sm shadow-xl">
+            <h2 class="text-xl font-semibold text-cyan-400 mb-4 flex items-center gap-2">
+                📂 Coursework / คลังข้อมูลและการส่งงาน
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- วิชา CSI205 -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-slate-800 rounded-xl hover:border-slate-600 border border-transparent transition-all">
+                    <div class="mb-3 sm:mb-0">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1">Assignment</span>
                         <h3 class="text-md font-medium text-slate-200">CSI205 การพัฒนาโปรแกรมส่วนหน้า</h3>
                     </div>
                     <a href="https://goodnightmare.github.io/_multipages/" 
                        target="_blank" 
-                       class="mt-3 sm:mt-0 inline-flex items-center justify-center px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-medium rounded-lg text-sm transition-colors shadow-lg shadow-cyan-500/20">
+                       class="inline-flex items-center justify-center px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-medium rounded-lg text-sm transition-colors shadow-lg shadow-cyan-500/20 whitespace-nowrap">
                         ดูผลงานที่ส่ง ↗
                     </a>
                 </div>
-
-                <!-- คุณสามารถเพิ่มวิชาหรือโปรเจกต์อื่น ๆ ตรงนี้ได้ในอนาคต -->
-                <!-- 
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-slate-800 rounded-xl">
-                    ...
-                </div> 
-                -->
             </div>
         </section>
 
