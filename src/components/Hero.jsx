@@ -50,9 +50,9 @@ export default function Hero() {
         <p
             className="mt-6 max-w-2xl text-slate-400 text-base sm:text-lg leading-relaxed"
         >
-            Computer Science student passionate about building
+            Computer Science student passionate about building {" "}
             <span className="text-cyan-400">Web & Mobile Applications</span>,
-            with interests in
+            with interests in{" "}
             <span className="text-blue-400">AI, NLP and Computer Vision</span>.
         </p>
 

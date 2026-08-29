@@ -72,13 +72,17 @@
 
                     <div className="glass border border-slate-800 rounded-2xl p-6 hover:border-purple-500/30 transition">
 
-                        <span className="text-xs text-purple-400 font-semibold uppercase tracking-wider">
-                            Hackathon
-                        </span>
-
-                        <h3 className="text-lg font-semibold mt-1">
-                            AI-Preneur Hackathon 2026
-                        </h3>
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                            <div>
+                                <span className="text-xs text-purple-400 font-semibold uppercase tracking-wider">
+                                    Hackathon
+                                </span>
+                                <h3 className="text-lg font-semibold mt-1">
+                                    AI-Preneur Hackathon 2026
+                                </h3>
+                            </div>
+                            <span className="text-xs text-slate-500">2026</span>
+                        </div>
 
                         <p className="text-sm text-slate-400 mt-3">
                             <span className="text-purple-300 font-medium">
@@ -99,13 +103,17 @@
 
                     <div className="glass border border-slate-800 rounded-2xl p-6 hover:border-blue-500/30 transition">
 
-                        <span className="text-xs text-blue-400 font-semibold uppercase tracking-wider">
-                            Hackathon
-                        </span>
-
-                        <h3 className="text-lg font-semibold mt-1">
-                            Gosoft Retail Tech Hackathon 2026
-                        </h3>
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                            <div>
+                                <span className="text-xs text-blue-400 font-semibold uppercase tracking-wider">
+                                    Hackathon
+                                </span>
+                                <h3 className="text-lg font-semibold mt-1">
+                                    Gosoft Retail Tech Hackathon 2026
+                                </h3>
+                            </div>
+                            <span className="text-xs text-slate-500">2026</span>
+                        </div>
 
                         <p className="text-sm text-slate-400 mt-3">
                             <span className="text-blue-300 font-medium">
@@ -126,13 +134,17 @@
 
                     <div className="glass border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/30 transition">
 
-                        <span className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">
-                            Cybersecurity Hackathon
-                        </span>
-
-                        <h3 className="text-lg font-semibold mt-1">
-                            Samsung × KBTG Digital Cybersecurity Hackathon 2026
-                        </h3>
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                            <div>
+                                <span className="text-xs text-emerald-400 font-semibold uppercase tracking-wider">
+                                    Cybersecurity Hackathon
+                                </span>
+                                <h3 className="text-lg font-semibold mt-1">
+                                    Samsung × KBTG Digital Cybersecurity Hackathon 2026
+                                </h3>
+                            </div>
+                            <span className="text-xs text-slate-500">2026</span>
+                        </div>
 
                         <p className="text-sm text-slate-400 mt-3">
                             Participated in a cybersecurity-focused hackathon
