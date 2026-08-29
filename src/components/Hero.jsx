@@ -33,12 +33,15 @@ export default function Hero() {
         </p>
 
         <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight"
+            className="text-5xl sm:text-6xl lg:text-6xl font-extrabold tracking-tight leading-tight"
         >
-            Nonthee
+            
             <span className="gradient-text">
+                Nonthee
+            </span> {" "}
+            {/* <span className="gradient-text"> */}
                 Panatuek
-            </span>
+            {/* </span> */}
         </h1>
 
         <h2
