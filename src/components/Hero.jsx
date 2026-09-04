@@ -77,7 +77,7 @@ export default function Hero() {
             </a>
 
             <a
-                href="/chat"
+                href="/#/chat"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-purple-400/30 bg-purple-400/10 hover:bg-purple-400/20 text-purple-200 font-semibold transition"
             >
                 Ask Night AI

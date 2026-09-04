@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,7 +11,16 @@ import Footer from "./components/Footer";
 import ChatPage from "./components/ChatPage";
 
 export default function App() {
-  const isChatPage = window.location.pathname.replace(/\/$/, "") === "/chat";
+  const getIsChatPage = () =>
+    window.location.hash === "#/chat" ||
+    window.location.pathname.replace(/\/$/, "") === "/chat";
+  const [isChatPage, setIsChatPage] = useState(getIsChatPage);
+
+  useEffect(() => {
+    const handleRouteChange = () => setIsChatPage(getIsChatPage());
+    window.addEventListener("hashchange", handleRouteChange);
+    return () => window.removeEventListener("hashchange", handleRouteChange);
+  }, []);
 
   useEffect(() => {
     if (isChatPage) return undefined;

@@ -33,7 +33,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="/chat"
+              href="/#/chat"
               className="ml-2 px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold hover:bg-cyan-300 transition"
             >
               Ask Night AI
@@ -87,7 +87,7 @@ export default function Navbar() {
             Contact
           </a>
           <a
-            href="/chat"
+            href="/#/chat"
             onClick={closeMenu}
             className="block w-fit px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold"
           >
