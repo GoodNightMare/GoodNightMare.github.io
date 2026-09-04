@@ -2,7 +2,10 @@ import { useState } from "react";
 import Icon from "./Icon";
 
 const suggestions = ["ไนท์คือใคร?", "ไนท์มีทักษะอะไรบ้าง?", "มีโปรเจกต์อะไรบ้าง?", "กำลังมองหางานแบบไหน?"];
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const DEFAULT_API_URL = import.meta.env.PROD
+  ? "https://portfolio-rag-api-yp0g.onrender.com"
+  : "http://localhost:8000";
+const API_URL = (import.meta.env.VITE_API_URL || DEFAULT_API_URL).replace(/\/+$/, "");
 
 export default function ChatPage() {
   const [input, setInput] = useState("");
