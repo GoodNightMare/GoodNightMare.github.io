@@ -29,8 +29,20 @@ export default function Projects() {
             {/* <!-- BuddyBuilder --> */}
             <article className="project-card glass border border-slate-800 rounded-2xl p-6">
 
-                <div className="p-3 w-fit rounded-xl bg-pink-400/10 text-pink-400">
-                    <Icon name="sparkles" />
+                <div className="flex items-start justify-between gap-4">
+                    <div className="p-3 rounded-xl bg-pink-400/10 text-pink-400">
+                        <Icon name="sparkles" />
+                    </div>
+
+                    <a
+                        href="https://github.com/buddybuilder-ai/app"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-500 hover:text-white transition"
+                        aria-label="BuddyBuilder AI application repository"
+                    >
+                        <Icon name="github" />
+                    </a>
                 </div>
 
                 <p className="text-xs text-pink-400 uppercase tracking-wider font-semibold mt-6">
@@ -194,6 +206,17 @@ export default function Projects() {
                     </a>
                 </div>
 
+                <div className="flex flex-wrap gap-4 mt-5">
+                    <a href="https://github.com/buddybuilder-ai/app" target="_blank" rel="noreferrer" className="project-link">
+                        App Repository
+                        <Icon name="github" />
+                    </a>
+                    <a href="https://github.com/buddybuilder-ai/core" target="_blank" rel="noreferrer" className="project-link text-slate-400 hover:text-white">
+                        Core Repository
+                        <Icon name="github" />
+                    </a>
+                </div>
+
             </article>
 
 
@@ -260,8 +283,20 @@ export default function Projects() {
             {/* <!-- CourseFlow --> */}
             <article className="project-card glass border border-slate-800 rounded-2xl p-6">
 
-                <div className="p-3 w-fit rounded-xl bg-blue-400/10 text-blue-400">
-                    <Icon name="graduation-cap" />
+                <div className="flex items-start justify-between gap-4">
+                    <div className="p-3 rounded-xl bg-blue-400/10 text-blue-400">
+                        <Icon name="graduation-cap" />
+                    </div>
+
+                    <a
+                        href="https://github.com/Dawinzhii/courseflow"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-500 hover:text-white transition"
+                        aria-label="CourseFlow GitHub repository"
+                    >
+                        <Icon name="github" />
+                    </a>
                 </div>
 
                 <p className="text-xs text-blue-400 uppercase tracking-wider font-semibold mt-6">
@@ -285,6 +320,16 @@ export default function Projects() {
                     <span className="tag">MongoDB</span>
                     <span className="tag">JWT</span>
                 </div>
+
+                <a
+                    href="https://github.com/Dawinzhii/courseflow"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                >
+                    GitHub
+                    <Icon name="github" />
+                </a>
 
             </article>
 
