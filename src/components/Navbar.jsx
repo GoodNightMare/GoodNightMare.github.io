@@ -33,6 +33,13 @@ export default function Navbar() {
             </a>
 
             <a
+              href="/chat"
+              className="ml-2 px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold hover:bg-cyan-300 transition"
+            >
+              Ask Night AI
+            </a>
+
+            <a
               href="https://github.com/GoodNightMare"
               target="_blank"
               rel="noreferrer"
@@ -78,6 +85,13 @@ export default function Navbar() {
           </a>
           <a href="#contact" onClick={closeMenu} className="block nav-link">
             Contact
+          </a>
+          <a
+            href="/chat"
+            onClick={closeMenu}
+            className="block w-fit px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold"
+          >
+            Ask Night AI
           </a>
         </div>
       </div>

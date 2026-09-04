@@ -8,9 +8,13 @@ import Hackathons from "./components/Hackathons";
 import CourseWork from "./components/CourseWork";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ChatPage from "./components/ChatPage";
 
 export default function App() {
+  const isChatPage = window.location.pathname.replace(/\/$/, "") === "/chat";
+
   useEffect(() => {
+    if (isChatPage) return undefined;
     const elements = document.querySelectorAll(
       "section > div, .project-card, .skill-card",
     );
@@ -27,7 +31,9 @@ export default function App() {
     );
     elements.forEach((element) => observer.observe(element));
     return () => observer.disconnect();
-  }, []);
+  }, [isChatPage]);
+
+  if (isChatPage) return <ChatPage />;
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100">

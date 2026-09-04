@@ -33,15 +33,13 @@ export default function Hero() {
         </p>
 
         <h1
-            className="text-5xl sm:text-6xl lg:text-6xl font-extrabold tracking-tight leading-tight"
+            className="text-5xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight"
         >
             
             <span className="gradient-text">
                 Nonthee
             </span> {" "}
-            {/* <span className="gradient-text"> */}
                 Panatuek
-            {/* </span> */}
         </h1>
 
         <h2
@@ -76,6 +74,14 @@ export default function Hero() {
             >
                 Contact Me
                 <Icon name="mail" className="w-4 h-4" />
+            </a>
+
+            <a
+                href="/chat"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-purple-400/30 bg-purple-400/10 hover:bg-purple-400/20 text-purple-200 font-semibold transition"
+            >
+                Ask Night AI
+                <Icon name="message-circle" className="w-4 h-4" />
             </a>
 
         </div>

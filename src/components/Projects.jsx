@@ -88,8 +88,20 @@ export default function Projects() {
                         {/* <!-- HikeCycle --> */}
             <article className="project-card glass border border-slate-800 rounded-2xl p-6">
 
-                <div className="p-3 w-fit rounded-xl bg-yellow-400/10 text-yellow-400">
-                    <Icon name="mountain" />
+                <div className="flex items-start justify-between gap-4">
+                    <div className="p-3 rounded-xl bg-yellow-400/10 text-yellow-400">
+                        <Icon name="mountain" />
+                    </div>
+
+                    <a
+                        href="https://github.com/GoodNightMare/Hike-Cycle"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-500 hover:text-white transition"
+                        aria-label="HikeCycle GitHub repository"
+                    >
+                        <Icon name="github" />
+                    </a>
                 </div>
 
                 <p className="text-xs text-yellow-400 uppercase tracking-wider font-semibold mt-6">
@@ -111,6 +123,16 @@ export default function Projects() {
                     <span className="tag">ASP.NET Core MVC</span>
                     <span className="tag">SQL Server</span>
                 </div>
+
+                <a
+                    href="https://github.com/GoodNightMare/Hike-Cycle"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                >
+                    GitHub
+                    <Icon name="github" />
+                </a>
 
             </article>
 
