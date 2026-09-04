@@ -64,7 +64,10 @@ export default function ChatPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: value }),
       });
-      if (!response.ok) throw new Error("Chat service unavailable");
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => null);
+        throw new Error(errorData?.detail || "Chat service unavailable");
+      }
       const data = await response.json();
       if (data.model) setModelName(data.model);
       setMessages((current) => [...current, {
@@ -73,10 +76,12 @@ export default function ChatPage() {
         sources: data.sources?.map((source) => source.title) ?? [],
         fallback: data.mode === "fallback",
       }]);
-    } catch {
+    } catch (error) {
       setMessages((current) => [...current, {
         role: "assistant",
-        text: "ขออภัยครับ Night AI ยังไม่พร้อมให้บริการชั่วคราว กรุณาลองใหม่อีกครั้ง หรือดูข้อมูลจากหน้า Portfolio ได้เลยครับ",
+        text: error instanceof Error && error.message !== "Chat service unavailable"
+          ? error.message
+          : "ขออภัยครับ Night AI ยังไม่พร้อมให้บริการชั่วคราว กรุณาลองใหม่อีกครั้ง หรือดูข้อมูลจากหน้า Portfolio ได้เลยครับ",
         sources: [],
         fallback: true,
       }]);
