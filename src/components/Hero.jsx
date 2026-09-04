@@ -1,5 +1,7 @@
 ﻿import Icon from './Icon'
 
+import AskNightAIButton from './AskNightAIButton'
+
 export default function Hero() {
   return (
 <section
@@ -76,13 +78,7 @@ export default function Hero() {
                 <Icon name="mail" className="w-4 h-4" />
             </a>
 
-            <a
-                href="/#/chat"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-purple-400/30 bg-purple-400/10 hover:bg-purple-400/20 text-purple-200 font-semibold transition"
-            >
-                Ask Night AI
-                <Icon name="message-circle" className="w-4 h-4" />
-            </a>
+            <AskNightAIButton />
 
         </div>
 

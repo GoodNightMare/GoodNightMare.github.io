@@ -1,6 +1,7 @@
 ﻿import Icon from "./Icon";
 
 import { useState } from "react";
+import AskNightAIButton from "./AskNightAIButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
           </a>
 
           {/* <!-- Desktop --> */}
-          <div className="hidden md:flex items-center gap-7 text-sm text-slate-400">
+          <div className="hidden lg:flex items-center gap-5 text-sm text-slate-400">
             <a href="#about" className="nav-link">
               About
             </a>
@@ -32,12 +33,7 @@ export default function Navbar() {
               Contact
             </a>
 
-            <a
-              href="/#/chat"
-              className="ml-2 px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold hover:bg-cyan-300 transition"
-            >
-              Ask Night AI
-            </a>
+            <AskNightAIButton />
 
             <a
               href="https://github.com/GoodNightMare"
@@ -54,7 +50,7 @@ export default function Navbar() {
             id="menuBtn"
             type="button"
             onClick={() => setIsOpen((open) => !open)}
-            className="md:hidden p-2 text-slate-300"
+            className="lg:hidden p-2 text-slate-300"
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
           >
@@ -65,7 +61,7 @@ export default function Navbar() {
         {/* <!-- Mobile menu --> */}
         <div
           id="mobileMenu"
-          className={`${isOpen ? "block" : "hidden"} md:hidden pb-5 pt-2 space-y-3 text-sm text-slate-400`}
+          className={`${isOpen ? "block" : "hidden"} lg:hidden pb-5 pt-2 space-y-3 text-sm text-slate-400`}
         >
           <a href="#about" onClick={closeMenu} className="block nav-link">
             About
@@ -86,13 +82,7 @@ export default function Navbar() {
           <a href="#contact" onClick={closeMenu} className="block nav-link">
             Contact
           </a>
-          <a
-            href="/#/chat"
-            onClick={closeMenu}
-            className="block w-fit px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold"
-          >
-            Ask Night AI
-          </a>
+          <AskNightAIButton onClick={closeMenu} />
         </div>
       </div>
     </nav>
