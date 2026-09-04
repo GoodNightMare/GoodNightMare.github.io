@@ -67,6 +67,17 @@ export default function Projects() {
                     <span className="tag">PostgreSQL</span>
                 </div>
 
+                <div className="flex flex-wrap gap-4 mt-5">
+                    <a href="https://github.com/buddybuilder-ai/app" target="_blank" rel="noreferrer" className="project-link">
+                        App Repository
+                        <Icon name="github" />
+                    </a>
+                    <a href="https://github.com/buddybuilder-ai/core" target="_blank" rel="noreferrer" className="project-link text-slate-400 hover:text-white">
+                        Core Repository
+                        <Icon name="github" />
+                    </a>
+                </div>
+
             </article>
 
                         {/* <!-- SlideMe --> */}
@@ -202,17 +213,6 @@ export default function Projects() {
                         className="project-link text-slate-400 hover:text-white"
                     >
                         GitHub
-                        <Icon name="github" />
-                    </a>
-                </div>
-
-                <div className="flex flex-wrap gap-4 mt-5">
-                    <a href="https://github.com/buddybuilder-ai/app" target="_blank" rel="noreferrer" className="project-link">
-                        App Repository
-                        <Icon name="github" />
-                    </a>
-                    <a href="https://github.com/buddybuilder-ai/core" target="_blank" rel="noreferrer" className="project-link text-slate-400 hover:text-white">
-                        Core Repository
                         <Icon name="github" />
                     </a>
                 </div>
